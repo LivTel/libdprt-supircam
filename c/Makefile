@@ -1,4 +1,4 @@
-# $Header: /home/cjm/cvs/libdprt-supircam/c/Makefile,v 1.1 2005-03-11 11:55:57 cjm Exp $
+# $Header: /home/cjm/cvs/libdprt-supircam/c/Makefile,v 1.2 2008-07-17 14:20:22 cjm Exp $
 
 include	../../../Makefile.common
 include	../../Makefile.common
@@ -53,10 +53,10 @@ checkin:
 	-(cd $(INCDIR); $(CI) $(CI_OPTIONS) dprt.h;)
 
 staticdepend:
-	makedepend -p$(BINDIR)/ -- $(CFLAGS)  -- $(SRCS)
+	makedepend $(MAKEDEPENDFLAGS) -p$(BINDIR)/ -- $(CFLAGS)  -- $(SRCS)
 
 depend:
-	makedepend -p$(BINDIR)/ -- $(CFLAGS)  -- $(SRCS)
+	makedepend $(MAKEDEPENDFLAGS) -p$(BINDIR)/ -- $(CFLAGS)  -- $(SRCS)
 
 lint:
 	$(LINT)	$(LINTFLAGS) $(SRCS)
@@ -74,6 +74,9 @@ backup: tidy
 
 #
 # $Log: not supported by cvs2svn $
+# Revision 1.1  2005/03/11 11:55:57  cjm
+# Initial revision
+#
 #
 
 # DO NOT DELETE

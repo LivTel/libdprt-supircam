@@ -1,4 +1,4 @@
-# $Header: /home/cjm/cvs/libdprt-supircam/test/Makefile,v 1.1 2005-03-11 11:56:17 cjm Exp $
+# $Header: /home/cjm/cvs/libdprt-supircam/test/Makefile,v 1.2 2008-07-17 14:20:24 cjm Exp $
 
 include	../../../Makefile.common
 include ../../Makefile.common
@@ -30,7 +30,7 @@ $(DOCS) : $(SRCS)
 	-$(CDOC) -d $(DOCSDIR) -h $(INCDIR) $(DOCFLAGS) $(SRCS)
 
 depend:
-	makedepend -p$(BINDIR)/ -- $(CFLAGS) -- $(SRCS)
+	makedepend $(MAKEDEPENDFLAGS) -p$(BINDIR)/ -- $(CFLAGS) -- $(SRCS)
 
 clean:
 	-$(RM) $(RM_OPTIONS) ${BINDIR}/dprt_test $(OBJS) $(TIDY_OPTIONS)
@@ -49,6 +49,9 @@ checkout:
 
 #
 # $Log: not supported by cvs2svn $
+# Revision 1.1  2005/03/11 11:56:17  cjm
+# Initial revision
+#
 #
 
 # DO NOT DELETE
