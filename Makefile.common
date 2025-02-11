@@ -1,0 +1,10 @@
+# $Header: /home/cjm/cvs/libdprt-supircam/Makefile.common,v 1.1 2025-02-11 11:52:40 cjm Exp $
+
+SUPIRCAM_HOME			= supircam
+LIBDPRT_SUPIRCAM_SRC_HOME	= $(LIBDPRT_SRC_HOME)/$(SUPIRCAM_HOME)
+LIBDPRT_SUPIRCAM_BIN_HOME	= $(LIBDPRT_BIN_HOME)/$(SUPIRCAM_HOME)
+LIBDPRT_SUPIRCAM_DOC_HOME	= $(LIBDPRT_DOC_HOME)/$(SUPIRCAM_HOME)
+
+#
+# $Log: not supported by cvs2svn $
+#
